@@ -10,6 +10,7 @@ Vamos fomentar nossa **COMUNIDADE ANDROID** mostrando esse Projeto aos grupos de
 ### Quer fazer networking, mas não sabe como? 
 ##### Telegram
 Uma das coisas mais importantes no nosso meio - Então entra no nosso do telegram para um contato mais rápido e direto: https://t.me/progdeelite
+
 ![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
  
 ##### Discord
