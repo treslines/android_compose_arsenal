@@ -1,28 +1,24 @@
 # 🇧🇷 Android Compose Arsenal 🇵🇹
-Coleção/Arsenal de componentes compose prontos para serem usados em seus aplicativos android ou para adapta-los ao seu caso de uso. 
+COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
 
 ### Gostaria de Contribuir?
-Vamos fomentar nossa **COMUNIDADE ANDROID** mostrando esse Projeto aos grupos de **slack**, **whatsapp**, **facebook** etc. Por mais conteúdo de qualidade em Português! 🇵🇹 🇧🇷 
+Me ajuda a fomentar nossa **COMUNIDADE ANDROID 🇵🇹 🇧🇷** mostrando esse Projeto aos grupos
 
+![image](https://user-images.githubusercontent.com/1042887/170561958-5140631e-55e5-43ab-954c-e9bb9baba8d9.png)
 
-**Ta curtindo?** : Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
+### Ta Curtindo? 
+Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
+![image](https://user-images.githubusercontent.com/1042887/170558597-8ff115e4-58f1-445e-9125-422729a67a22.png)
 
-### Quer fazer networking, mas não sabe como? 
-##### Telegram
-Uma das coisas mais importantes no nosso meio - Então entra no nosso do telegram para um contato mais rápido e direto: https://t.me/progdeelite
-
+# Quer fazer networking, mas não sabe como? 
+**Telegram**: Entra no nosso do telegram para um contato mais rápido e direto: https://t.me/progdeelite
 ![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
  
-##### Discord
-Discord pra conteúdos mais organizados. Lá trocamos experiências, fazemos networking, recomendamos vagas, indicamos livros e partilhamos muito conhecimento: https://discord.gg/nKpnKQYgbd (vide visual discord abaixo)
-![image](https://user-images.githubusercontent.com/1042887/169702116-58afbad3-7c7b-4bcc-a0f2-a87fb67de909.png)
+**Discord**: Networking, vagas, livros e muito muito conhecimento compartilhado: https://discord.gg/nKpnKQYgbd 
+![image](https://user-images.githubusercontent.com/1042887/170555025-9b0b3d83-ca7a-468d-86b9-c4d40deb9775.png)
 
-### Techblog BugOnSoftware
-![image](https://user-images.githubusercontent.com/1042887/169701550-95fba04e-121e-435a-a4dd-7ba84d17fd6f.png)
-Para um conteúdo **Premium**, de **alta qualidade** e **extremamente didático** em lingua portuguesa: https://bugonsoftware.substack.com 
-
-### Visual do Discord
-![image](https://user-images.githubusercontent.com/1042887/168490867-d21f4f74-0747-421c-af84-4bc3ad5ce500.png)
+**Techblog BugOnSoftware**: Conteúdo de **alta qualidade** e **extremamente didático** em Português: https://bugonsoftware.substack.com 
+![image](https://user-images.githubusercontent.com/1042887/170555703-f4323c08-2bda-43a1-b42e-37d8fb7463b9.png)
 
 ### ⚙️ **SETUP DO PROJETO ANDROID**
 | Titulo        | 📺 Youtube Link |
