@@ -31,3 +31,4 @@ Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
 | **🚩 AGENDADO: 28/07/2022** ✔️ ANDROID THEME - COMO IMPLEMENTAR TEMA DAY & NIGHT USANDO COMPOSE NO ANDROID STUDIO | <a href="https://youtu.be/cnr68Gmr1O0" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-THEME%5D-COMO-IMPLEMENTAR-TEMA-DAY-%26-NIGHT-USANDO-COMPOSE-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
+| **🚩 AGENDADO: 01/08/2022** ✔️ ANDROID MATERIAL YOU - COMO APLICAR CORES DINÂMICAS NO TEMA DIA & NOITE EM COMPOSE NO ANDROID | <a href="https://youtu.be/73jIHwk-Td0" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-MATERIAL-YOU%5D-COMO-APLICAR-CORES-DIN%C3%82MICAS-NO-TEMA-DIA-%26-NOITE-EM-COMPOSE-NO-ANDROID.png" width="100" height="56"></a> |
