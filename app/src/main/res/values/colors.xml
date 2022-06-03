@@ -1,27 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    # Material theme colors DAY
-    <color name="primaryColor">#fbc02d</color>
-    <color name="primaryLightColor">#fff263</color>
-    <color name="onPrimaryColor">#000000</color>
 
-    <color name="secondaryColor">#ff6f00</color>
-    <color name="secondaryLightColor">#ffa040</color>
-    <color name="onSecondaryColor">#000000</color>
+<!--    ESSAS CORES FIZERAM PARTE DO VIDEO: https://youtu.be/cnr68Gmr1O0 -->
+<!--    # Material theme colors DAY-->
+<!--    <color name="primaryColor">#fbc02d</color>-->
+<!--    <color name="primaryLightColor">#fff263</color>-->
+<!--    <color name="onPrimaryColor">#000000</color>-->
 
-    <color name="backgroundColor">#ffffff</color>
-    <color name="surfaceColor">#ffffff</color>
-    <color name="errorColor">#8e0000</color>
+<!--    <color name="secondaryColor">#ff6f00</color>-->
+<!--    <color name="secondaryLightColor">#ffa040</color>-->
+<!--    <color name="onSecondaryColor">#000000</color>-->
 
+<!--    <color name="backgroundColor">#ffffff</color>-->
+<!--    <color name="surfaceColor">#ffffff</color>-->
+<!--    <color name="errorColor">#8e0000</color>-->
 
-    <color name="onBackgroundColor">#FF03DAC5</color>  # primaryTextColor
-    <color name="onSurfaceColor">#FFBB86FC</color>
-    <color name="onErrorColor">#ff5f52</color>
+<!--    <color name="onBackgroundColor">#FF03DAC5</color>  # primaryTextColor-->
+<!--    <color name="onSurfaceColor">#FFBB86FC</color>-->
+<!--    <color name="onErrorColor">#ff5f52</color>-->
+<!--    # Material theme colors NIGHT - Define it here...-->
 
-    # Material theme colors NIGHT - Define it here...
+    <color name="status_bar_color">#FF3700B3</color>-->
 
+    <!-- MATERIAL YOU - MATERIAL 3 THEMING COLORS DAY/LIGHT -->
+    <!-- downloaded: https://material-foundation.github.io/material-theme-builder/#/custom -->
+    <color name="light_primary">#ff904d00</color>
+    <color name="light_onPrimary">#FFffffff</color>
+    <color name="light_primaryContainer">#FFffdcbf</color>
+    <color name="light_onPrimaryContainer">#FF2f1500</color>
+    <color name="light_secondary">#FF745943</color>
+    <color name="light_onSecondary">#FFffffff</color>
+    <color name="light_secondaryContainer">#FFffdcc1</color>
+    <color name="light_onSecondaryContainer">#FF2a1707</color>
+    <color name="light_tertiary">#FF5b6237</color>
+    <color name="light_onTertiary">#FFffffff</color>
+    <color name="light_tertiaryContainer">#FFe0e8b1</color>
+    <color name="light_onTertiaryContainer">#FF191e00</color>
+    <color name="light_error">#FFba1b1b</color>
+    <color name="light_errorContainer">#FFffdad4</color>
+    <color name="light_onError">#FFffffff</color>
+    <color name="light_onErrorContainer">#FF410001</color>
+    <color name="light_background">#FFfcfcfc</color>
+    <color name="light_onBackground">#FF201a16</color>
+    <color name="light_surface">#FFfcfcfc</color>
+    <color name="light_onSurface">#FF201a16</color>
+    <color name="light_surfaceVariant">#FFf3dfd1</color>
+    <color name="light_onSurfaceVariant">#FF51443a</color>
+    <color name="light_outline">#FF837469</color>
+    <color name="light_inverseOnSurface">#FFfaeee7</color>
+    <color name="light_inverseSurface">#FF352f2b</color>
+    <color name="light_inversePrimary">#FFffb776</color>
+    <color name="light_shadow">#FF000000</color>
 
-    # Custom colors for extended corporate identity
+    <!-- MATERIAL YOU - MATERIAL 3 THEMING COLORS NIGHT/DARK -->
+    <color name="dark_primary">#FFffb776</color>
+    <color name="dark_onPrimary">#FF4d2700</color>
+    <color name="dark_primaryContainer">#FF6d3900</color>
+    <color name="dark_onPrimaryContainer">#FFffdcbf</color>
+    <color name="dark_secondary">#FFe3c0a5</color>
+    <color name="dark_onSecondary">#FF412c19</color>
+    <color name="dark_secondaryContainer">#FF5a422e</color>
+    <color name="dark_onSecondaryContainer">#FFffdcc1</color>
+    <color name="dark_tertiary">#FFc4cb97</color>
+    <color name="dark_onTertiary">#FF2d330d</color>
+    <color name="dark_tertiaryContainer">#FF434a22</color>
+    <color name="dark_onTertiaryContainer">#FFe0e8b1</color>
+    <color name="dark_error">#FFffb4a9</color>
+    <color name="dark_errorContainer">#FF930006</color>
+    <color name="dark_onError">#FF680003</color>
+    <color name="dark_onErrorContainer">#FFffdad4</color>
+    <color name="dark_background">#FF201a16</color>
+    <color name="dark_onBackground">#FFebe0d9</color>
+    <color name="dark_surface">#FF201a16</color>
+    <color name="dark_onSurface">#FFebe0d9</color>
+    <color name="dark_surfaceVariant">#FF51443a</color>
+    <color name="dark_onSurfaceVariant">#FFd6c3b6</color>
+    <color name="dark_outline">#FF9e8d81</color>
+    <color name="dark_inverseOnSurface">#FF201a16</color>
+    <color name="dark_inverseSurface">#FFebe0d9</color>
+    <color name="dark_inversePrimary">#FF904d00</color>
+    <color name="dark_shadow">#FF000000</color>
+
+    <color name="seed">#FFe88517</color>
+    <color name="error">#FFba1b1b</color>
+
+    <!--  Custom colors for extended corporate identity (day e night) -->
     <color name="blue_deep_ocean">#FF3700B3</color>
     <color name="white_snow">#FFFFFFFF</color>
     <color name="blue_lake">#FF3700B3</color>

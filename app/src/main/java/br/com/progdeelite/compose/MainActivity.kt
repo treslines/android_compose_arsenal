@@ -9,32 +9,40 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.*
+import androidx.compose.material.TopAppBar
+import androidx.compose.material.rememberScaffoldState
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.Role.Companion.Button
 import androidx.compose.ui.tooling.preview.Preview
 import br.com.progdeelite.compose.ui.theme.ComposeArsenalTheme
 
+@OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
-    @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
+    @SuppressLint(
+        "UnusedMaterialScaffoldPaddingParameter",
+        "UnusedMaterial3ScaffoldPaddingParameter"
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeArsenalTheme {
-                val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Closed))
                 Scaffold(
-                    scaffoldState = scaffoldState,
-                    topBar = { TopAppBar(title = {Text("Home")})  },
+                    topBar = {
+                        TopAppBar(
+                            title = { Text("Home") },
+                            backgroundColor = MaterialTheme.colorScheme.onSecondary
+                        )
+                    },
                     floatingActionButtonPosition = FabPosition.End,
-                    floatingActionButton = { FloatingActionButton(onClick = {}){
-                        Text("+")
-                    } },
-                    drawerContent = { Text(text = "Configurações") },
-                    content = { HomeScreen(this)},
-                    bottomBar = { BottomAppBar() { Text("Barra de Navegação") } }
+                    floatingActionButton = {
+                        FloatingActionButton(onClick = {}) {
+                            Text("+")
+                        }
+                    },
+                    content = { HomeScreen(this) },
+                    bottomBar = { BottomAppBar { Text("Barra de Navegação") } }
                 )
             }
         }
@@ -42,7 +50,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun HomeScreen(context: Context){
+fun HomeScreen(context: Context) {
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
