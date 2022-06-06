@@ -6,4 +6,7 @@
     <string translatable="false" name="btn_row_confirm">OK</string>
 
     <string translatable="false" name="btn_template_name">Template</string>
+    <string name="exit_loading">Encerrar Loading</string>
+    <string name="enter_loading">Reiniciar Loading</string>
+    <string name="loading">Carregando…</string>
 </resources>

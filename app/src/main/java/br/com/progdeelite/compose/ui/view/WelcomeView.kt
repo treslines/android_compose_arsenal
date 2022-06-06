@@ -15,7 +15,7 @@ import br.com.progdeelite.compose.R
 import br.com.progdeelite.compose.ui.components.ArsenalButtonRow
 import br.com.progdeelite.compose.ui.components.ArsenalIconImage
 import br.com.progdeelite.compose.ui.theme.ArsenalTheme
-import br.com.progdeelite.compose.ui.theme.ComposeArsenalThemeExtended
+import br.com.progdeelite.compose.ui.theme.ArsenalThemeExtended
 
 // 1) Como estruturar componente (antes de começar) Criar view
 // 2) Como usar Column, Rows, Boxes - Criar componentes
@@ -37,12 +37,12 @@ fun WelcomeView(context: Context) {
             // Column
             Text(
                 text = "Compose Arsenal",
-                style = ComposeArsenalThemeExtended.typography.h1
+                style = ArsenalThemeExtended.typography.h1
             )
 
             Text(
                 text = "Seja bem Vindo a tropa!",
-                style = ComposeArsenalThemeExtended.typography.body1,
+                style = ArsenalThemeExtended.typography.body1,
                 modifier = Modifier.padding(vertical = 16.dp)
             )
 

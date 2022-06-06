@@ -27,6 +27,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 // 4) COMO INCREMENTAR NOSSO THEME ATUAL PARA DAR SUPORTE AO TEMA NOVO
 // 5) VER RESULTADO NA PRÁTICA
 
+// LINK PRO VIDEO: https://youtu.be/cnr68Gmr1O0 & https://youtu.be/73jIHwk-Td0
 
 @Composable
 fun ArsenalTheme(
@@ -61,7 +62,7 @@ fun ArsenalTheme(
     }
 }
 
-object ComposeArsenalThemeExtended {
+object ArsenalThemeExtended {
     val typography: AppCustomTypography
         @Composable
         get() = AppCustomTypography
@@ -131,16 +132,16 @@ fun ColorList() {
             "outline" to MaterialTheme.colorScheme.outline,
 
             // custom extented colors
-            "customSnowWhite" to ComposeArsenalThemeExtended.colors.snowWhite,
-            "customDeepOcean" to ComposeArsenalThemeExtended.colors.deepOcean,
-            "customSkyBlue" to ComposeArsenalThemeExtended.colors.skyBlue,
-            "customNightBlue" to ComposeArsenalThemeExtended.colors.nightBlue,
-            "customDialogBackground" to ComposeArsenalThemeExtended.colors.dialogBackground,
+            "customSnowWhite" to ArsenalThemeExtended.colors.snowWhite,
+            "customDeepOcean" to ArsenalThemeExtended.colors.deepOcean,
+            "customSkyBlue" to ArsenalThemeExtended.colors.skyBlue,
+            "customNightBlue" to ArsenalThemeExtended.colors.nightBlue,
+            "customDialogBackground" to ArsenalThemeExtended.colors.dialogBackground,
         ).forEach { (text, color) ->
             Row {
                 Text(
                     text = text,
-                    color = ComposeArsenalThemeExtended.colors.snowWhite,
+                    color = ArsenalThemeExtended.colors.snowWhite,
                     modifier = Modifier
                         .weight(1f)
                 )

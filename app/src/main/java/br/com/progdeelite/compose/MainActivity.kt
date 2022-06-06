@@ -16,6 +16,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import br.com.progdeelite.compose.ui.theme.ArsenalTheme
+import br.com.progdeelite.compose.ui.view.LoadingView
+import br.com.progdeelite.compose.ui.view.WelcomeView
+import br.com.progdeelite.compose.viewmodel.ObserveStateViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
@@ -25,7 +28,17 @@ class MainActivity : ComponentActivity() {
     )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val viewModel = ObserveStateViewModel()
+        viewModel.setLoadingState(true)
+
         setContent {
+
+//            Video: XXXXXX
+//            ArsenalTheme{
+//                WelcomeView(this) }
+//            }
+
             ArsenalTheme {
                 Scaffold(
                     topBar = {
@@ -40,7 +53,8 @@ class MainActivity : ComponentActivity() {
                             Text("+")
                         }
                     },
-                    content = { HomeScreen(this) },
+//                    content = { HomeScreen(this) }, // Video: https://youtu.be/5031eqGD4xU
+                    content = { LoadingView(viewModel) }, // Video: XXXXXX
                     bottomBar = { BottomAppBar { Text("Barra de Navegação") } }
                 )
             }
@@ -49,7 +63,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun HomeScreen(context: Context) {
+fun HomeView(context: Context) {
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,

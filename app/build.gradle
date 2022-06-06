@@ -9,7 +9,7 @@
  var androidx_core = '1.9.0-alpha04'
  var androidx_junit = '4.13.2'
  var androidx_espresso = '3.4.0'
- var androidx_compose = '1.2.0-beta02'
+ var androidx_compose = '1.2.0-beta03'
  var compose_theme_adapter = '1.1.10'
  var androidx_compose_activity = '1.4.0'
  var androidx_junit_ext = '1.1.3'
@@ -77,8 +77,8 @@ dependencies {
     implementation "androidx.activity:activity-compose:$androidx_compose_activity"
     implementation "com.google.android.material:compose-theme-adapter:$compose_theme_adapter"
     // MATERIAL 3 - MATERIAL YOU
-    implementation 'com.google.android.material:material:1.6.0'
-    implementation 'androidx.compose.material3:material3:1.0.0-alpha12'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.compose.material3:material3:1.0.0-alpha13'
     // MATERIAL 3 - MATERIAL YOU STATUS BAR
     implementation 'com.google.accompanist:accompanist-systemuicontroller:0.24.9-beta'
 
