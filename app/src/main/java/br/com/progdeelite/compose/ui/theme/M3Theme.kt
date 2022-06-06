@@ -29,7 +29,7 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 
 @Composable
-fun ComposeArsenalTheme(
+fun ArsenalTheme(
     isDynamic: Boolean = true,
     useDarkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
@@ -76,7 +76,7 @@ object ComposeArsenalThemeExtended {
 @Preview
 @Composable
 fun LightColorsPreview() {
-    ComposeArsenalTheme(useDarkTheme = false) {
+    ArsenalTheme(useDarkTheme = false) {
         ColorList()
     }
 }
@@ -84,7 +84,7 @@ fun LightColorsPreview() {
 @Preview
 @Composable
 fun DarkColorsPreview() {
-    ComposeArsenalTheme(useDarkTheme = true) {
+    ArsenalTheme(useDarkTheme = true) {
         ColorList()
     }
 }

@@ -10,13 +10,12 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.TopAppBar
-import androidx.compose.material.rememberScaffoldState
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import br.com.progdeelite.compose.ui.theme.ComposeArsenalTheme
+import br.com.progdeelite.compose.ui.theme.ArsenalTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
@@ -27,7 +26,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeArsenalTheme {
+            ArsenalTheme {
                 Scaffold(
                     topBar = {
                         TopAppBar(
@@ -78,7 +77,7 @@ fun TextButton(clickAction: () -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    ComposeArsenalTheme {
+    ArsenalTheme {
         Greeting("Android")
     }
 }

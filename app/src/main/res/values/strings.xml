@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Compose Arsenal</string>
+
+    <string translatable="false" name="btn_row_cancel">Cancelar</string>
+    <string translatable="false" name="btn_row_maybe">Talvez</string>
+    <string translatable="false" name="btn_row_confirm">OK</string>
+
+    <string translatable="false" name="btn_template_name">Template</string>
 </resources>
