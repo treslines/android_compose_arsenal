@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-// VIDEO COMO CRIAR E OBSERVAR ESTADOS EM JETPACK COMPOSE:  XXXXXXXX
+// VIDEO COMO CRIAR E OBSERVAR ESTADOS EM JETPACK COMPOSE:  https://youtu.be/kuwZX2fSj5A
 class ObserveStateViewModel : ViewModel() {
 
     val loadingStateFlow = MutableStateFlow(false) // IMPORTANT QUE SEJA "FLOW"

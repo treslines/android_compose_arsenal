@@ -24,6 +24,8 @@ import br.com.progdeelite.compose.viewmodel.ObserveStateViewModel
 // 3) COMO PASSAR ESTADO PARA COMPOSABLE E COMO ALTERA-LO (LOADING VIEW)
 // 4) COMO INSTANCIAR O FLOW NO PREVIEW USANDO VIEW MODEL
 
+// LINK VIDEO: https://youtu.be/kuwZX2fSj5A
+
 @Composable
 fun LoadingView(viewModel: ObserveStateViewModel) {
 
