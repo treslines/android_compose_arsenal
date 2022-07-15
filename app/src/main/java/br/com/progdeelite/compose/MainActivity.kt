@@ -6,18 +6,22 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.activity.viewModels
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.TopAppBar
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.rememberNavController
 import br.com.progdeelite.compose.navigation.RootNavigationGraph
+import br.com.progdeelite.compose.ui.components.*
 import br.com.progdeelite.compose.ui.theme.ArsenalTheme
 import br.com.progdeelite.compose.ui.view.LoadingView
 import br.com.progdeelite.compose.ui.view.WelcomeView
@@ -34,13 +38,18 @@ class MainActivity : ComponentActivity() {
         val viewModel = ObserveStateViewModel()
         viewModel.setLoadingState(true)
 
+        val saveableViewModel: SaveableViewModel by viewModels()
+
         setContent {
 
 //          Video: https://youtu.be/73jIHwk-Td0
 //          VideoWelcome()
 
+//          Video: https://youtu.be/UJpwxg4tv_U
+//          VideoComplexNavigationGraph()
+
 //          Video: https://youtu.be/xxxxxxxx
-            VideoComplexNavigationGraph()
+            VideoHoisting(saveableViewModel)
 
 //          Video: https://youtu.be/5031eqGD4xU
 //          VideoHelloWorld()
@@ -55,6 +64,29 @@ class MainActivity : ComponentActivity() {
 private fun VideoWelcome() {
     ArsenalTheme {
         WelcomeView(LocalContext.current)
+    }
+}
+
+@Composable
+private fun VideoHoisting(viewModel: SaveableViewModel) {
+    ArsenalTheme {
+        Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
+            Text(
+                text = "COM STATES",
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 8.dp)
+            )
+            ExpandableView()
+            ExpandableSavableView()
+            Spacer(modifier = Modifier.size(24.dp))
+            Text(
+                text = "COM VIEW MODELS",
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 8.dp)
+            )
+            ExpandableViewHoisted(ExpandableViewModel())
+            ExpandableViewHoistedSavable(viewModel)
+        }
     }
 }
 

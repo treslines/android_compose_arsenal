@@ -6,18 +6,20 @@
 // +---------------------------+
 // | DEPENDENCY VERSIONS       |
 // +---------------------------+
- var androidx_core = '1.9.0-alpha04'
+ var androidx_core = '1.9.0-alpha05'
  var androidx_junit = '4.13.2'
  var androidx_espresso = '3.4.0'
- var androidx_compose = '1.2.0-beta03'
- var compose_theme_adapter = '1.1.11'
- var androidx_compose_activity = '1.4.0'
+ var androidx_compose = '1.3.0-alpha01'
+ var androidx_icons_extended = "2.5.0"
+ var compose_theme_adapter = '1.1.14'
+ var androidx_compose_activity = '1.6.0-alpha05'
  var androidx_junit_ext = '1.1.3'
- var androidx_lifecycle_runtime = '2.4.1'
- var androidx_material3 = '1.0.0-alpha13'
+ var androidx_lifecycle_runtime = '2.6.0-alpha01'
+ var androidx_material3 = '1.0.0-alpha14'
  var android_systembars_ui_controler = '0.24.9-beta'
  var google_android_material = '1.6.1'
- var compose_navigation = '2.5.0-rc01'
+ var compose_navigation = '2.5.0'
+ var compiler_version = "1.2.0-beta03"
 
 // +---------------------------+
 // | PLAYSTORE VERSIONS        |
@@ -61,7 +63,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion androidx_compose
+        kotlinCompilerExtensionVersion compiler_version
     }
     packagingOptions {
         resources {
@@ -85,6 +87,9 @@ dependencies {
     implementation "androidx.compose.material3:material3:$androidx_material3"
     // MATERIAL 3 - MATERIAL YOU STATUS BAR
     implementation "com.google.accompanist:accompanist-systemuicontroller:$android_systembars_ui_controler"
+
+    // ICON EXTENDED
+    // implementation "androidx.compose.material:material-icons-extended:$androidx_icons_extended"
 
     // COMPOSE NAVIGATION
     implementation "androidx.navigation:navigation-compose:$compose_navigation"
