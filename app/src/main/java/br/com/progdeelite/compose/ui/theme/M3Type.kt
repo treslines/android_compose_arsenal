@@ -1,6 +1,6 @@
 package br.com.progdeelite.compose.ui.theme
 
-import androidx.compose.material.MaterialTheme
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
@@ -122,28 +122,28 @@ object AppCustomTypography {
 
     val h1: TextStyle
         @Composable
-        get() = MaterialTheme.typography.h4.copy(
-            color = MaterialTheme.colors.primary,
+        get() = MaterialTheme.typography.titleMedium.copy(
+            color = MaterialTheme.colorScheme.onPrimaryContainer,
             fontWeight = FontWeight.Bold,
         )
 
     val h2: TextStyle
         @Composable
-        get() = MaterialTheme.typography.h6.copy(
-            color = MaterialTheme.colors.primary,
+        get() = MaterialTheme.typography.titleSmall.copy(
+            color = MaterialTheme.colorScheme.onPrimaryContainer,
             fontWeight = FontWeight.Bold,
         )
 
     val body1: TextStyle
         @Composable
-        get() = MaterialTheme.typography.body1.copy(
-            color = MaterialTheme.colors.primary,
+        get() = MaterialTheme.typography.bodyMedium.copy(
+            color = MaterialTheme.colorScheme.primary,
         )
 
     val body2: TextStyle
         @Composable
-        get() = MaterialTheme.typography.body2.copy(
-            color = MaterialTheme.colors.primary,
+        get() = MaterialTheme.typography.bodySmall.copy(
+            color = MaterialTheme.colorScheme.primary,
         )
 }
 

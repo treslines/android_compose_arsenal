@@ -13,4 +13,7 @@
     <string name="exit_loading">Encerrar Loading</string>
     <string name="enter_loading">Reiniciar Loading</string>
     <string name="loading">Carregando…</string>
+    <string name="register_id">Número de registro</string>
+    <string name="activated">Ativado em:</string>
+    <string name="last_login">Último acesso:</string>
 </resources>

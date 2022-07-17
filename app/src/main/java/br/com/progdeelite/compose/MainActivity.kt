@@ -49,7 +49,10 @@ class MainActivity : ComponentActivity() {
 //          VideoComplexNavigationGraph()
 
 //          Video: https://youtu.be/xxxxxxxx
-            VideoHoisting(saveableViewModel)
+//          VideoHoisting(saveableViewModel)
+
+//          Video: https://youtu.be/xxxxxxxx
+            LazyColumnScreen()
 
 //          Video: https://youtu.be/5031eqGD4xU
 //          VideoHelloWorld()
@@ -57,6 +60,28 @@ class MainActivity : ComponentActivity() {
 //          Video: https://youtu.be/kuwZX2fSj5A
 //          VideoSaveState(viewModel)
         }
+    }
+}
+
+@Composable
+fun LazyColumnScreen() {
+    ArsenalTheme {
+        val viewModel = SettingsViewModel().apply {
+            items.value = mutableListOf(
+                Item(1,"meu Item 1", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(2,"meu Item 2 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(3,"meu Item 3 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(4,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(5,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(6,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(7,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(8,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(9,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(10,"meu Item 7", "Aug. 2022", "Sept. 2022", "AAAAA")
+            )
+            registerId.value = "R123456"
+        }
+        SettingsScreen(viewModel)
     }
 }
 
