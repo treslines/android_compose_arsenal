@@ -1,5 +1,5 @@
 # 🇧🇷 Android Compose Arsenal 🇵🇹
-COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
+NOCÕES BÁSICAS DE JETPACK COMPOSE (SEGUINDO O PATHWAY OFICIAL: https://developer.android.com/courses/pathways/compose) E UMA COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
 
 ### Gostaria de Contribuir?
 Me ajuda a fomentar nossa **COMUNIDADE ANDROID 🇵🇹 🇧🇷** mostrando esse Projeto aos grupos
