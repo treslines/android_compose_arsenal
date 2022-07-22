@@ -23,7 +23,7 @@ Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
 ### ⚙️ **SETUP DO PROJETO ANDROID**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
-| **🚩 AGENDADO: 21/07/2022** ✔️ ANDROID E GITHUB - COMO ENVIAR PROJETO COMPOSE PARA REPOSITÓRIO NO GITHUB FÁCIL | <a href="https://youtu.be/5031eqGD4xU" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-E-GITHUB%5D-COMO-ENVIAR-PROJETO-COMPOSE-PARA-REPOSIT%C3%93RIO-NO-GITHUB-F%C3%81CIL.png" width="100" height="56"></a> |
+| ✔️ ANDROID E GITHUB - COMO ENVIAR PROJETO COMPOSE PARA REPOSITÓRIO NO GITHUB FÁCIL | <a href="https://youtu.be/5031eqGD4xU" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-E-GITHUB%5D-COMO-ENVIAR-PROJETO-COMPOSE-PARA-REPOSIT%C3%93RIO-NO-GITHUB-F%C3%81CIL.png" width="100" height="56"></a> |
 | **🚩 AGENDADO: 25/07/2022** ✔️ ANDROID BuildSrc - COMO CRIAR DIRETÓRIO BuildSrc PARA GERENCIAR DEPENDÊNCIAS NO ANDROID STUDIO | <a href="https://youtu.be/2QCfcKHd9M8" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-BuildSrc%5D-COMO-CRIAR-DIRET%C3%93RIO-BuildSrc-PARA-GERENCIAR-DEPEND%C3%8ANCIAS-NO-ANDROID-STUDIO.png" width="100" height="56"></a> |
 
 
