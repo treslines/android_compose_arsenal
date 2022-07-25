@@ -1,25 +1,6 @@
 # 🇧🇷 Android Compose Arsenal 🇵🇹
 NOCÕES BÁSICAS DE JETPACK COMPOSE (SEGUINDO O PATHWAY OFICIAL: https://developer.android.com/courses/pathways/compose) E UMA COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
 
-### Gostaria de Contribuir?
-Me ajuda a fomentar nossa **COMUNIDADE ANDROID 🇵🇹 🇧🇷** mostrando esse Projeto aos grupos
-
-![image](https://user-images.githubusercontent.com/1042887/170561958-5140631e-55e5-43ab-954c-e9bb9baba8d9.png)
-
-### Ta Curtindo? 
-Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
-![image](https://user-images.githubusercontent.com/1042887/170558597-8ff115e4-58f1-445e-9125-422729a67a22.png)
-
-# Quer fazer networking, mas não sabe como? 
-**Telegram**: Entra no nosso do telegram para um contato mais rápido e direto: https://t.me/progdeelite
-![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
- 
-**Discord**: Networking, vagas, livros e muito muito conhecimento compartilhado: https://discord.gg/nKpnKQYgbd 
-![image](https://user-images.githubusercontent.com/1042887/170555025-9b0b3d83-ca7a-468d-86b9-c4d40deb9775.png)
-
-**Techblog BugOnSoftware**: Conteúdo de **alta qualidade** e **extremamente didático** em Português: https://bugonsoftware.substack.com 
-![image](https://user-images.githubusercontent.com/1042887/170555703-f4323c08-2bda-43a1-b42e-37d8fb7463b9.png)
-
 ### ⚙️ **SETUP DO PROJETO ANDROID**
 | Titulo        | 📺 Youtube Link |
 | :------------- |:-------------:|
@@ -38,3 +19,23 @@ Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
 | **🚩 AGENDADO: 15/08/2022** 🛥️ NAVGRAPH COMPOSE - COMO CRIAR ROTAS DE NAVEGAÇÃO COMPLEXAS EM JETPACK COMPOSE ANDROID | <a href="https://youtu.be/UJpwxg4tv_U" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BNAVGRAPH-COMPOSE%5D-COMO-CRIAR-ROTAS-DE-NAVEGA%C3%87%C3%83O-COMPLEXAS-EM-JETPACK-COMPOSE-ANDROID.png" width="100" height="56"></a> |
 | **🚩 AGENDADO: 18/08/2022** ✔️ ANDROID STATE HOISTING - COMO IMPLEMENTAR STATE HOISTING EM JETPACK COMPOSE NO ANDROID | <a href="https://youtu.be/Cb9_STKO3TU" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BANDROID-STATE-HOISTING%5D-COMO-IMPLEMENTAR-STATE-HOISTING-EM-JETPACK-COMPOSE-NO-ANDROID.png" width="100" height="56"></a> |
 | **🚩 AGENDADO: 22/08/2022** ✔️ COMPOSE RECYCLERVIEW - COMO CRIAR E USAR LAZY COLUMN EM JETPACK COMPOSE NO ANDROID | <a href="https://youtu.be/LgqTeJTZ4c8" target="_blank"><img src="https://github.com/treslines/android_compose_arsenal/blob/main/app/src/main/mini/%5BCOMPOSE-RECYCLERVIEW%5D-COMO-CRIAR-E-USAR-LAZY-COLUMN-EM-JETPACK-COMPOSE-NO-ANDROID.png" width="100" height="56"></a> |
+
+
+### Gostaria de Contribuir?
+Me ajuda a fomentar nossa **COMUNIDADE ANDROID 🇵🇹 🇧🇷** mostrando esse Projeto aos grupos
+
+![image](https://user-images.githubusercontent.com/1042887/170561958-5140631e-55e5-43ab-954c-e9bb9baba8d9.png)
+
+### Ta Curtindo? 
+Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
+![image](https://user-images.githubusercontent.com/1042887/170558597-8ff115e4-58f1-445e-9125-422729a67a22.png)
+
+# Quer fazer networking, mas não sabe como? 
+**Telegram**: Entra no nosso do telegram para um contato mais rápido e direto: https://t.me/progdeelite
+![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
+ 
+**Discord**: Networking, vagas, livros e muito muito conhecimento compartilhado: https://discord.gg/nKpnKQYgbd 
+![image](https://user-images.githubusercontent.com/1042887/170555025-9b0b3d83-ca7a-468d-86b9-c4d40deb9775.png)
+
+**Techblog BugOnSoftware**: Conteúdo de **alta qualidade** e **extremamente didático** em Português: https://bugonsoftware.substack.com 
+![image](https://user-images.githubusercontent.com/1042887/170555703-f4323c08-2bda-43a1-b42e-37d8fb7463b9.png)
