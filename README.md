@@ -43,6 +43,7 @@ Deixa uma estrelinha ⭐ ai para me motivar! Estamos juntos!👊
 ![image](https://user-images.githubusercontent.com/1042887/169701787-dba72b6f-c5b7-4d34-9d51-0052a7b40443.png)
  
 **Discord**: Networking, vagas, livros e muito muito conhecimento compartilhado: https://discord.gg/nKpnKQYgbd 
+
 ![image](https://user-images.githubusercontent.com/1042887/170555025-9b0b3d83-ca7a-468d-86b9-c4d40deb9775.png)
 
 **Techblog BugOnSoftware**: Conteúdo de **alta qualidade** e **extremamente didático** em Português: https://bugonsoftware.substack.com 
