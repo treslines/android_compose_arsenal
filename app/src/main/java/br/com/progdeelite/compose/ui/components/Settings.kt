@@ -1,5 +1,6 @@
 package br.com.progdeelite.compose.ui.components
 
+import android.util.Log
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -60,6 +61,10 @@ class SettingsViewModel : ViewModel() {
         items.value = items.value.filter { it != item }.toMutableList()
     }
 
+    fun navigateTo(destinationId: Int) {
+        Log.d("TESTANDO", "Nague para destination: $destinationId")
+    }
+
     fun getLastItemId(): Int = items.value.last().id
 
     fun setRegisterId(id: String) {
@@ -118,7 +123,7 @@ fun SettingsScreen(viewModel: SettingsViewModel) {
 }
 
 @Composable
-private fun RegisterId(
+fun RegisterId(
     id: String
 ) {
     Column(

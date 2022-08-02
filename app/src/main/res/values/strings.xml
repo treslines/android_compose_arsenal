@@ -1,5 +1,7 @@
 <resources>
+    <string name="empty"></string>
     <string name="app_name">Compose Arsenal</string>
+    <string name="profile_name">Prog. De Elite</string>
 
     <string name="bottom_bar_home">Home</string>
     <string name="bottom_bar_profile">Profile</string>

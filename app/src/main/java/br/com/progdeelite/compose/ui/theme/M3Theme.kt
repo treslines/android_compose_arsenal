@@ -57,6 +57,7 @@ fun ArsenalTheme(
         MaterialTheme(
             colorScheme = colors,
             typography = AppDefaultTypography,
+            shapes = M3DefaultShapes,
             content = content
         )
     }
