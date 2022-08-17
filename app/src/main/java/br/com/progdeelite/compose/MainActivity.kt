@@ -12,10 +12,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.Scaffold
 import androidx.compose.material.TopAppBar
+import androidx.compose.material.rememberScaffoldState
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -30,6 +31,7 @@ import br.com.progdeelite.compose.ui.theme.ArsenalTheme
 import br.com.progdeelite.compose.ui.view.LoadingView
 import br.com.progdeelite.compose.ui.view.WelcomeView
 import br.com.progdeelite.compose.viewmodel.ObserveStateViewModel
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     @SuppressLint(
@@ -87,12 +89,73 @@ class MainActivity : ComponentActivity() {
 //          HomeScreen()
 
 //          https://youtu.be/aQlcHIFAfVM
-            BottomNavScreen()
+//          BottomNavScreen()
+
+//          https://youtu.be/xxxxxxx
+            SplashScreen()
+
+//          https://youtu.be/xxxxxxx
+//          DrawerScreen()
+
         }
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+
+private fun showSelection(context:Context, selectionId: Int) {
+    Toast.makeText(context, "Cliquei: $selectionId", Toast.LENGTH_SHORT).show()
+}
+// import androidx.compose.material.Scaffold
+@Composable
+private fun DrawerScreen() {
+    ArsenalTheme {
+        val scaffoldState = rememberScaffoldState()
+        Scaffold(
+            scaffoldState = scaffoldState,
+            modifier = Modifier.statusBarsPadding(),
+            drawerContent = {
+                Drawer( onClick = ::showSelection)
+            }
+        ) { padding ->
+            val scope = rememberCoroutineScope()
+            FakeContent(
+                modifier = Modifier.padding(padding),
+                onClick = {
+                    scope.launch {
+                        // suspended function fora do escopo desse composable (no escopo do Scaffold)
+                        scaffoldState.drawerState.open()
+                    }
+                }
+            )
+        }
+    }
+}
+
+@Composable
+fun SplashScreen() {
+    ArsenalTheme {
+        Surface(color = MaterialTheme.colorScheme.primary) {
+            var showLandingScreen by remember { mutableStateOf(true) }
+            if (showLandingScreen) {
+                LandingScreen(
+                    modifier = Modifier,
+                    splashWaitTime = 1_500L,
+                    onTimeout = { showLandingScreen = false }
+                )
+            } else {
+                Column(
+                    modifier = Modifier.fillMaxSize(),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(text = "Tela de Home")
+                }
+            }
+        }
+    }
+}
+
+
 @Composable
 fun BottomNavScreen() {
     ArsenalTheme {
@@ -102,22 +165,22 @@ fun BottomNavScreen() {
             HomeContent(
                 modifier = Modifier.padding(padding),
                 rowData = listOf(
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name, 1),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,2),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,3),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,4),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,5),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,6),
-                    ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,7),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                    ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 7),
                 ),
                 gridViewData = listOf(
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,1),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,2),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,3),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,4),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,5),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,6),
-                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,7),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                    SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 7),
                 )
             )
         }
@@ -129,22 +192,22 @@ fun HomeScreen() {
     ArsenalTheme {
         HomeContent(
             rowData = listOf(
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name, 1),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,2),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,3),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,4),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,5),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,6),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,7),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 7),
             ),
             gridViewData = listOf(
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,1),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,2),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,3),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,4),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,5),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,6),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,7),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 7),
             )
         )
     }
@@ -155,13 +218,13 @@ fun GridViewScreen() {
     ArsenalTheme {
         Gridview(
             gridViewData = listOf(
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,1),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,2),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,3),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,4),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,5),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,6),
-                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name,7),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                SimpleCardItem(R.drawable.ic_droid, R.string.profile_name, 7),
             ),
             modifier = Modifier.padding(8.dp)
         )
@@ -174,7 +237,9 @@ fun SimpleCardScreen() {
         SimpleCard(
             text = R.string.app_name,
             drawable = R.drawable.ic_droid,
-            modifier = Modifier.padding(8.dp).fillMaxWidth()
+            modifier = Modifier
+                .padding(8.dp)
+                .fillMaxWidth()
         )
     }
 }
@@ -184,13 +249,13 @@ fun ProfileRowScreen() {
     ArsenalTheme {
         ProfileRow(
             rowData = listOf(
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name, 1),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,2),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,3),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,4),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,5),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,6),
-                ProfileImageItem( R.drawable.ic_droid, R.string.profile_name,7),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 1),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 2),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 3),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 4),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 5),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 6),
+                ProfileImageItem(R.drawable.ic_droid, R.string.profile_name, 7),
             ),
             modifier = Modifier.padding(8.dp)
         )
@@ -203,7 +268,9 @@ fun ProfileImageScreen() {
         ProfileImage(
             text = R.string.profile_name,
             drawable = R.drawable.ic_droid,
-            modifier = Modifier.background(Color.Green).padding(8.dp)
+            modifier = Modifier
+                .background(Color.Green)
+                .padding(8.dp)
         )
     }
 }
@@ -235,16 +302,16 @@ fun LazyColumnAnimatedScreen() {
     ArsenalTheme {
         val viewModel = SettingsViewModel().apply {
             items.value = mutableListOf(
-                Item(1,"meu Item 1", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(2,"meu Item 2 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(3,"meu Item 3 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(4,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(5,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(6,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(7,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(8,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(9,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(10,"meu Item 7", "Aug. 2022", "Sept. 2022", "AAAAA")
+                Item(1, "meu Item 1", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(2, "meu Item 2 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(3, "meu Item 3 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(4, "meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(5, "meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(6, "meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(7, "meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(8, "meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(9, "meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(10, "meu Item 7", "Aug. 2022", "Sept. 2022", "AAAAA")
             )
             registerId.value = "R123456"
         }
@@ -257,16 +324,16 @@ fun LazyColumnScreen() {
     ArsenalTheme {
         val viewModel = SettingsViewModel().apply {
             items.value = mutableListOf(
-                Item(1,"meu Item 1", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(2,"meu Item 2 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(3,"meu Item 3 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(4,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(5,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(6,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(7,"meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(8,"meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(9,"meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
-                Item(10,"meu Item 7", "Aug. 2022", "Sept. 2022", "AAAAA")
+                Item(1, "meu Item 1", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(2, "meu Item 2 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(3, "meu Item 3 ", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(4, "meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(5, "meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(6, "meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(7, "meu Item 4", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(8, "meu Item 5", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(9, "meu Item 6", "Aug. 2022", "Sept. 2022", "AAAAA"),
+                Item(10, "meu Item 7", "Aug. 2022", "Sept. 2022", "AAAAA")
             )
             registerId.value = "R123456"
         }
