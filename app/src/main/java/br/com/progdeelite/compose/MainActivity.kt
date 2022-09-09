@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -95,12 +96,53 @@ class MainActivity : ComponentActivity() {
 //          SplashScreen()
 
 //          https://youtu.be/xxxxxxx
-            DrawerScreen()
+//          DrawerScreen()
+
+//          https://youtu.be/xxxxxxx
+//          FullScreenMessageDialog()
+
+//          https://youtu.be/xxxxxxx
+            FullScreenMsgDialogWithState()
 
         }
     }
 }
+@Composable
+fun FullScreenMsgDialogWithState() {
+    ArsenalTheme {
+        val context = LocalContext.current
+        FullScreenMessage(
+            icon = R.drawable.ic_warning,
+            iconTint = R.color.light_error,
+            title = "Falha na conexão",
+            message = "O registro não foi salvo!",
+            bottomButtonText = "Tentar novamente",
+            bottomButtonAction = {
+                Toast.makeText(
+                    context,
+                    "Salvar registro novamente!",
+                    Toast.LENGTH_SHORT).show()
+            }
+        )
+    }
+}
 
+@Composable
+fun FullScreenMessageDialog() {
+    ArsenalTheme {
+        val context = LocalContext.current
+        FullScreenMessage(
+            icon = R.drawable.ic_warning,
+            iconTint = R.color.light_error,
+            title = "Atenção",
+            message = "Você esta sem internet!",
+            topButtonText = "Continuar sem Internet",
+            topButtonAction = { Toast.makeText(context,"Fechando Dialog", Toast.LENGTH_SHORT).show() },
+            bottomButtonText = "Configure acesso de Internet",
+            bottomButtonAction = { Toast.makeText(context,"Abrindo Configurações", Toast.LENGTH_SHORT).show() }
+        )
+    }
+}
 
 private fun showSelection(context:Context, selectionId: Int) {
     Toast.makeText(context, "Cliquei: $selectionId", Toast.LENGTH_SHORT).show()
