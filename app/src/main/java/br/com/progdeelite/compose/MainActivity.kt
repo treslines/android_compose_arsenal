@@ -102,16 +102,40 @@ class MainActivity : ComponentActivity() {
 //          FullScreenMessageDialog()
 
 //          https://youtu.be/xxxxxxx
-            FullScreenMsgDialogWithState()
+//          FullScreenMsgDialogWithState()
+
+//          https://youtu.be/xxxxxxx
+            FullScreenMsgDialogWithSaveable()
 
         }
     }
 }
+
+@Composable
+fun FullScreenMsgDialogWithSaveable() {
+    ArsenalTheme {
+        val context = LocalContext.current
+        FullScreenMessageWithSaveable(
+            icon = R.drawable.ic_verified,
+            iconTint = R.color.light_inversePrimary,
+            title = "Verificação",
+            message = "Sua conta esta sendo verificada!",
+            bottomButtonText = "OK, entendi!",
+            bottomButtonAction = {
+                Toast.makeText(
+                    context,
+                    "Fechando Dialog Informativo!",
+                    Toast.LENGTH_SHORT).show()
+            }
+        )
+    }
+}
+
 @Composable
 fun FullScreenMsgDialogWithState() {
     ArsenalTheme {
         val context = LocalContext.current
-        FullScreenMessage(
+        FullScreenMessageWithState(
             icon = R.drawable.ic_warning,
             iconTint = R.color.light_error,
             title = "Falha na conexão",
