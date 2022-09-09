@@ -46,7 +46,7 @@ fun LandingScreen(modifier: Modifier = Modifier, splashWaitTime: Long, onTimeout
         // Crie um efeito que corresponda ao ciclo de vida da LandingScreen.
         // Se LandingScreen se recompor ou onTimeout mudar,
         // o atraso não deve começar novamente.
-        LaunchedEffect(true) {
+        LaunchedEffect(true) { // Você pode usar Unit tbm
             delay(splashWaitTime)
             currentOnTimeout()
         }

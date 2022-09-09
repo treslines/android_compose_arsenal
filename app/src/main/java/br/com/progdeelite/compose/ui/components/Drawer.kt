@@ -21,8 +21,9 @@ import br.com.progdeelite.compose.R
 import br.com.progdeelite.compose.ui.theme.ArsenalTheme
 
 
-// 1) COMO CRIAR UM DRAWER SIMPLES
+// 1) COMO CRIAR UM DRAWER SIMPLES (FAKE CONTENT PAGE)
 // 2) COMO REAGIR AOS CLIQUES
+// 3) QUANDO USAR O "rememberCoroutineScope"
 
 
 private val screens =

@@ -91,11 +91,11 @@ class MainActivity : ComponentActivity() {
 //          https://youtu.be/aQlcHIFAfVM
 //          BottomNavScreen()
 
-//          https://youtu.be/xxxxxxx
-            SplashScreen()
+//          https://youtu.be/Y3VeuG3jWHo
+//          SplashScreen()
 
 //          https://youtu.be/xxxxxxx
-//          DrawerScreen()
+            DrawerScreen()
 
         }
     }
@@ -123,6 +123,8 @@ private fun DrawerScreen() {
                 onClick = {
                     scope.launch {
                         // suspended function fora do escopo desse composable (no escopo do Scaffold)
+                        // mas que DESENHA também! Não podemos usar LaunchedEffect como antes porque
+                        // não podemos chamar elementos de composição em openDrawer. Não estamos na composição.
                         scaffoldState.drawerState.open()
                     }
                 }
