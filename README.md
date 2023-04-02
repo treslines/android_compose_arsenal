@@ -1,5 +1,17 @@
 # 🇧🇷 Android Compose Arsenal 🇵🇹
-NOCÕES BÁSICAS DE JETPACK COMPOSE (SEGUINDO O PATHWAY OFICIAL: https://developer.android.com/courses/pathways/compose) E UMA COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
+NOCÕES BÁSICAS DE JETPACK COMPOSE (SEGUINDO O PATHWAY OFICIAL: https://developer.android.com/courses/pathways/compose).
+
+Neste repositório iremos tratar tópicos tais como:
+- Introdução ao Android Jetpack Compose
+- Como começar a usar o Android Jetpack Compose
+- Layouts no Android Jetpack Compose
+- Como criar componentes personalizados no Android Jetpack Compose
+- Animações no Android Jetpack Compose
+- Material Design no Android Jetpack Compose
+- Trabalhando com dados no Android Jetpack Compose
+- Testes no Android Jetpack Compose
+- Migração de projetos existentes para o Android Jetpack Compose
+- Dicas e truques para desenvolvimento com Android Jetpack Compose
 
 # ⛓️ **Antes de continuar, garanta sua empregabilidade futura!**
 Networking é uma das coisas mais importantes na área de TI. (Se não a mais importante) **Em tempos de tantos layoffs, uma boa rede de contatos é indispensável**. Portanto, comece a criar sua rede de networking o quanto antes. Você irá me agradecer no futuro.  **Não sabe por onde começar?** Conecte-se comigo e participe dos nossos grupos de ajuda e networking. O pessoal é super ativo, colaborativo e nos ajudamos uns aos outros. 
