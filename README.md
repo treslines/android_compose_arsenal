@@ -16,7 +16,7 @@ Seja também um multiplicador de conhecimento. Mostre esse repositório para sua
 
 | 👇 Texto com link para postar nas redes sociais 👇 |
 | :------------- |
-| Repositório bacana em Português 🇵🇹 🇧🇷 para quem pretende criar um projeto multiplataforma mobile. Vai te evitar muita dor de cabeça e economizar muito tempo no trabalho. https://bit.ly/kotlin-multiplatform-mobile |
+| Repositório bacana em Português 🇵🇹 🇧🇷 para quem pretende criar um projeto Android com Jetpack Compose. Vai te evitar muita dor de cabeça e economizar muito tempo no trabalho. https://github.com/treslines/android_compose_arsenal |
 
 
 ### ⚙️ **SETUP DO PROJETO ANDROID**
