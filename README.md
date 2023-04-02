@@ -1,7 +1,7 @@
 # 🇧🇷 Android Compose Arsenal 🇵🇹
 NOCÕES BÁSICAS DE JETPACK COMPOSE (SEGUINDO O PATHWAY OFICIAL: https://developer.android.com/courses/pathways/compose) E UMA COLEÇÃO DE COMPONENTES PRONTOS PARA USO NOS SEUS PROJETOS OU ADAPTA-LOS AO SEU CASO DE USO.
 
-# ⛓️ **ANTES DE CONTINUAR, CONECTE-SE COMIGO!**
+# ⛓️ **Antes de continuar, garanta sua empregabilidade futura!**
 Networking é uma das coisas mais importantes na área de TI. (Se não a mais importante) **Em tempos de tantos layoffs, uma boa rede de contatos é indispensável**. Portanto, comece a criar sua rede de networking o quanto antes. Você irá me agradecer no futuro.  **Não sabe por onde começar?** Conecte-se comigo e participe dos nossos grupos de ajuda e networking. O pessoal é super ativo, colaborativo e nos ajudamos uns aos outros. 
 - 🧲 | Telegram: networking gratuito ► https://bit.ly/telegramGb
 - 🧲 | Discord: conteúdo seleto ►  https://bit.ly/discordGb
